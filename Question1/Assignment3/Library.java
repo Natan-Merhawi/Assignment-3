@@ -25,9 +25,9 @@ public class Library {
         Member desiredMember = findMemberByID(memberID);
 
         if (desiredBook!= null) {
-            System.out.println("desired book is available");
+            System.out.println("The book you desire is available");
             desiredMember.borrowBook(desiredBook);
-            System.out.println("successfully borrowed book ");
+            System.out.println("you have successfully borrowed the book");
             int bookCopies = desiredBook.getCopiesAvailable();
             bookCopies=bookCopies-1;
             desiredBook.setCopiesAvailable(bookCopies);
@@ -35,7 +35,7 @@ public class Library {
         }
 
         else{
-            System.out.println("desired book is not available");
+            System.out.println("Sorry the book you are looking for is not available");
         }
 
 
